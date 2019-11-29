@@ -1,7 +1,7 @@
 {
-  "name": "serverless-cognito-add-custom-attributes",
-  "version": "0.3.0",
-  "description": "Add custom attributes to an existing CloudFormation-managed CognitoUserPool and CognitoUserPoolClient without losing all your users.",
+  "name": "serverless-cognito-add-custom-attributes-with-optional-client",
+  "version": "0.3.1",
+  "description": "Add custom attributes to an existing CloudFormation-managed CognitoUserPool and/or CognitoUserPoolClient without losing all your users.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive \"./tests/*.js\"",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GetWala/serverless-cognito-add-custom-attributes.git"
+    "url": "git+https://github.com/steveizzle/serverless-cognito-add-custom-attributes.git"
   },
   "files": [
     ".eslintrc",
@@ -25,11 +25,11 @@
   ],
   "author": "Michael Duminy (https://github.com/michaelduminy)",
   "license": "MIT",
-  "maintainers": ["Jared Leonard (https://github.com/jmaleonard)"],
+  "maintainers": ["Stefan Riembauer (https://github.com/steveizzle)"],
   "bugs": {
-    "url": "https://github.com/GetWala/serverless-cognito-add-custom-attributes/issues"
+    "url": "https://github.com/steveizzle/serverless-cognito-add-custom-attributes/issues"
   },
-  "homepage": "https://github.com/GetWala/serverless-cognito-add-custom-attributes#readme",
+  "homepage": "https://github.com/steveizzle/serverless-cognito-add-custom-attributes#readme",
   "dependencies": {
     "lodash": "^4.17.10"
   },

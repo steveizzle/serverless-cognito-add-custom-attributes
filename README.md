@@ -6,17 +6,19 @@ This plugin allows you to add custom attributes to an existing CloudFormation-ma
 
 This plugin also adds the specified attributes to a User Pool Client, giving that client read and write permissions for the new attribute.
 
+This fork of the original repo was necessary cause i needed a quick way of adding only attributes to the user pool without user pool clients. With this fork you dont have to add UserPoolClient Refs in the custom section.
+
 # Requirements
 - Node 8+
 - serverless 1+
 
 # Usage
 
-Install `npm i serverless-cognito-add-custom-attributes`, then add `serverless-cognito-add-custom-attributes` to your serverless.yml `plugins` list.
+Install `npm i serverless-cognito-add-custom-attributes-with-optional-client`, then add `serverless-cognito-add-custom-attributes-with-optional-client` to your serverless.yml `plugins` list.
 
 ```yml
 plugins:
-    - serverless-cognito-add-custom-attributes
+    - serverless-cognito-add-custom-attributes-with-optional-client
 
 custom:
   CognitoAddCustomAttributes: 
@@ -63,7 +65,7 @@ Note: If you have multiple userPool-userPoolClients you can specify them as an a
 Example:
 ```yml
 plugins:
-    - serverless-cognito-add-custom-attributes
+    - serverless-cognito-add-custom-attributes-with-optional-client
 
 custom:
   CognitoAddCustomAttributes:
